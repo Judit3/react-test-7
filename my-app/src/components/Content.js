@@ -29,6 +29,18 @@ export class Content extends Component {
                 </div>
 
                 <div className={css.SearchResults}>
+                    {/*{savedPosts.map((post)=>{
+                    return <div className={css.SearchItem} key={post.title}>
+                                <p>{post.title}</p>
+                                <p>{post.name}</p>
+                                <img scr={post.image} alt="random"/>
+                                <p>{post.description}</p>
+                            </div>
+                    }   
+                    )}*/}  
+                    {/*<PostItem savedPosts={savedPosts}/>*/} 
+
+
                     {
                         this.state.isLoaded ?
                         <PostItem savedPosts={savedPosts} />
